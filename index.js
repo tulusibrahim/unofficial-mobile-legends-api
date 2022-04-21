@@ -2,6 +2,7 @@ let express = require('express')
 let app = express()
 let axios = require('axios')
 require('dotenv').config();
+let port = 3000 || process.env.PORT
 
 app.get('/:id', async (req, res) => {
     // last id == 115
@@ -10,6 +11,6 @@ app.get('/:id', async (req, res) => {
     res.send(data.data)
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Running on port 3000 with 💘')
 })
