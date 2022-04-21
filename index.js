@@ -2,7 +2,7 @@ let express = require('express')
 let app = express()
 let axios = require('axios')
 require('dotenv').config();
-let port = 3000 || process.env.PORT
+let port = 3000 || process.env.port
 
 app.get('/:id', async (req, res) => {
     // last id == 115
