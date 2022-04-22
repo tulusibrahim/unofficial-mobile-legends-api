@@ -2,12 +2,12 @@ const express = require('express')
 const router = express.Router()
 let axios = require('axios')
 
-router.get('/heroes/', async (req, res) => {
+router.get('/heroes', async (req, res) => {
     let data = await axios.get(`${process.env.URL}/hero/list?language=${lang ? lang : 'en'}`)
     res.send(data.data)
 })
 
-router.get('/hero/:id/', async (req, res) => {
+router.get('/hero/:id', async (req, res) => {
     // last id == 115
     let heroID = req.params.id
     let data = await axios.get(`${process.env.URL}/hero/detail?id=${heroID}&language=${lang ? lang : 'en'}`)
