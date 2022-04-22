@@ -9,4 +9,14 @@ router.get('/:id', async (req, res) => {
     res.send(data.data)
 })
 
+router.get('/heroes', async (req, res) => {
+    let data = await axios.get(`${process.env.URL}/hero/list?language=en`)
+    res.send(data.data)
+})
+
+
+// router.get('/role', async () => {
+
+// })
+
 module.exports = router
