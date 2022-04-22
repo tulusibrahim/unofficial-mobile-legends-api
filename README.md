@@ -1,7 +1,7 @@
 
 # Project Title
 
-A brief description of what this project does and who it's for
+Unofficial API for mobile legends game.
 
 
 ## API Reference
