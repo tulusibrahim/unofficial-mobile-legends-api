@@ -10,7 +10,7 @@ Base URL: ```https://unofficial-mobile-legends-api.vercel.app/api```
 
 #### Get All Heroes
 
-```http
+```
   GET /heroes
 ```
 
@@ -20,7 +20,7 @@ Base URL: ```https://unofficial-mobile-legends-api.vercel.app/api```
 
 #### Get Hero Detail
 
-```http
+```
   GET /hero/:id
 ```
 
@@ -30,7 +30,7 @@ Base URL: ```https://unofficial-mobile-legends-api.vercel.app/api```
 
 #### Get All Roles
 
-```http
+```
   GET /roles
 ```
 
@@ -40,9 +40,10 @@ Base URL: ```https://unofficial-mobile-legends-api.vercel.app/api```
 
 #### Get Hero by Roles
 
-```http
+```
   GET /roles/:name
 ```
+List of name can be found through /roles endpoint.
 
 | Parameter | Type     | Description                       |
 | :-------- | :--------| :------------------------ |
